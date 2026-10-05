@@ -1,0 +1,16 @@
+# Archived research code (not released)
+_archive/
+
+# Weights and outputs
+checkpoints/
+outputs/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
