@@ -146,6 +146,10 @@ The world frame is z-up (gravity along −z), with the first panorama at the ori
 
 `demo/lythwood_room` is the CC0 panorama [Lythwood Room](https://polyhaven.com/a/lythwood_room) from Poly Haven, with SAM 2 masks of its furniture.
 
+## Dataset split
+
+`splits/front3d_train.txt` and `splits/front3d_test.txt` list the 3D-FRONT scene IDs of our training (6,240 scenes) and test (200 scenes) sets.
+
 ## License
 
 The code of this repository is released under the [MIT License](LICENSE). The vendored third-party code keeps its own license: [OmniVGGT](third_party/omnivggt/LICENSE) (MIT) and [Amodal3R](third_party/amodal3r/LICENSE.txt) (S-Lab License 1.0, non-commercial).
