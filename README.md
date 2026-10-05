@@ -35,11 +35,6 @@ Pano3DComposer turns one or more 360° panoramas of a room into an **editable, m
 <img src="assets/method_overview.png" width="95%" alt="Method overview">
 </div>
 
-## News
-
-- **2026-10** Inference code, weights and a real-world demo are released, now also supporting multiple panoramas of one room.
-- Pano3DComposer is accepted to CVPR 2026.
-
 ## Installation
 
 Tested on Linux with Python 3.10, PyTorch 2.4.0 + CUDA 12.1 and an NVIDIA H100. Any GPU with 24 GB or more should work. `--low-vram` keeps idle models on the CPU.
@@ -78,7 +73,7 @@ pip install --no-deps git+https://github.com/ByteDance-Seed/Depth-Anything-3.git
 Download the packed weights (6.4 GB) into `checkpoints/`:
 
 ```bash
-huggingface-cli download qiuzidian/Pano3DComposer pano3d.safetensors --local-dir checkpoints
+huggingface-cli download AutumnSonsweet/Pano3DComposer pano3d.safetensors --local-dir checkpoints
 ```
 
 The Amodal3R (or TRELLIS) weights are downloaded from Hugging Face on first use.
@@ -150,6 +145,10 @@ The world frame is z-up (gravity along −z), with the first panorama at the ori
 ## Demo data
 
 `demo/lythwood_room` is the CC0 panorama [Lythwood Room](https://polyhaven.com/a/lythwood_room) from Poly Haven, with SAM 2 masks of its furniture.
+
+## License
+
+The code of this repository is released under the [MIT License](LICENSE). The vendored third-party code keeps its own license: [OmniVGGT](third_party/omnivggt/LICENSE) (MIT) and [Amodal3R](third_party/amodal3r/LICENSE.txt) (S-Lab License 1.0, non-commercial).
 
 ## Citation
 
